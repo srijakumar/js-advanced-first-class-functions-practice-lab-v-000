@@ -30,3 +30,11 @@ const driversByName = function(drivers){
 
   );
 }
+
+const totalRevenue = function(drivers){
+  return drivers.reduce(function (agg, currentdriver){
+    return agg+currentdriver.revenue;
+  }
+    
+  )
+}
